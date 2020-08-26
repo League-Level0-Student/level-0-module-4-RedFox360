@@ -1,10 +1,12 @@
 package _02_boolean._1_sleepy_head;
 
 import javax.swing.JOptionPane;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class SleepyHead {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		// boolean variables can only hold one of two values - true or false
@@ -12,12 +14,20 @@ public class SleepyHead {
 		/************************  SLEEPY HEAD  **************************/
 		boolean isWeekend = false;
 		// Write code to ask the user what day it is.
-        while (!isWeekend)	{
-		// Set the boolean isWeekend based on the value they enter
-        	String isWeekendString = JOptionPane.showInputDialog("What day is it?");
-        	if(isWeekendString.equalsIgnoreCase(anotherString))
-		// If it is the weekend, tell the user they get to sleep in.
+		String[] woptions = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday",};
+        int weekend  = JOptionPane.showOptionDialog(null, "What day is it?",
+                "What day is it?",
+                JOptionPane.INFORMATION_MESSAGE, JOptionPane.INFORMATION_MESSAGE, null, woptions, null);
+        if(weekend==5)    {
+            isWeekend = true;
         }
+        if(weekend==6) {
+           isWeekend = true;
+        }
+		// Set the boolean isWeekend based on the value they enter
+       
+		// If it is the weekend, tell the user they get to sleep in.
+        
         
 		// If it is not the weekend, tell them to get out of bed and go to school!
 		
