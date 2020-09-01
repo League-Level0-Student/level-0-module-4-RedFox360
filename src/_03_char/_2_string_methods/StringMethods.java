@@ -26,10 +26,7 @@ for (int i = 0; i < length; i++) {
 
 		
 		// 5. Pick a char inside your String, and use a loop to determine
-int line = 0;
-for(int i; i < length; i++) {
-s.charAt(line);
-line+=1;
+
 
 
 		//    what position/index in the String the char is located.

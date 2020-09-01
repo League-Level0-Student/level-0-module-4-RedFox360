@@ -24,6 +24,9 @@ public class SleepyHead {
         if(weekend==6) {
            isWeekend = true;
         }
+        else	{
+        	isWeekend = false;
+        }
 		// Set the boolean isWeekend based on the value they enter
        
 		// If it is the weekend, tell the user they get to sleep in.
