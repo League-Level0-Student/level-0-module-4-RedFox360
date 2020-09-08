@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 public class DontForgetTheLyrics {
 	/*
 	 * For this game, we'll play the start of a song, and the player has to guess the rest of the lyrics.
-	 * 
+	 *
 	 * 1. To record a sound clip, open Audacity and record your song.
 	 * 
 	 * 2. Click File -> Export Audio, and save your file on the Desktop.
