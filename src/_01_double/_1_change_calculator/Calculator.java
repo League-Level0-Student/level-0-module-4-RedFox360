@@ -21,32 +21,38 @@ public class Calculator {
 		double added = number1+number2;
 		double divided = number1/number2;
 		double multiplied = number1*number2;
+		double sqrt1 = Math.sqrt(number1);
+		double sqrt2 = Math.sqrt(number2);
 	
 		
-		String[] options = {"×", "÷", "+", "-", "^"};
-		int colorop = JOptionPane.showOptionDialog(null, "Choose an operation",
+		String[] options = {"×", "÷", "+", "-", "^", "sqrt"};
+		int numberop = JOptionPane.showOptionDialog(null, "Choose an operation",
 		"Choose an operation",
 		JOptionPane.INFORMATION_MESSAGE, JOptionPane.INFORMATION_MESSAGE, null, options, null);
-		if(colorop==0)	{
+		if(numberop==0)	{
 			JOptionPane.showMessageDialog(null, "The answer is " + multiplied  + "");
 		}
-		if(colorop==1)	{
-			if(divided==0)	{
+		if(numberop==1)	{
+			if(number2==0)	{
 				JOptionPane.showMessageDialog(null, "The answer is undefined");
 			}
 			else	{
 				JOptionPane.showMessageDialog(null, "The answer is " + divided + "");
 			}
 		}
-		if(colorop==2) {
+		if(numberop==2) {
 			JOptionPane.showMessageDialog(null, "The answer is " + added + "");
 		}
-		if(colorop==3)	{
+		if(numberop==3)	{
 			JOptionPane.showMessageDialog(null, "The answer is " + subtracted + "");
 		}
-		if(colorop==4)	{
+		if(numberop==4)	{
 			JOptionPane.showMessageDialog(null, "The answer is " + exponents + "");
 		}
+		if(numberop==5) {
+			JOptionPane.showMessageDialog(null, "The square root of your first number is " + sqrt1 + ". The square root of your second number is " + sqrt2 + ".");
+		}
+		
 		
 	}
 	
